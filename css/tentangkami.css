@@ -1,0 +1,122 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #011627, #081229);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Animasi */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.hero .foto-kelompok {
+  width: 90%;
+  max-width: 800px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 auto 30px;
+  border: 4px solid #4facfe;
+  box-shadow: 0 0 20px rgba(79, 172, 254, 0.6);
+  animation: zoomIn 1s ease forwards;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero .foto-kelompok:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(79, 172, 254, 0.9);
+}
+
+.hero .foto-kelompok img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Deskripsi */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #0e1d3a;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 900px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ddd;
+  text-align: center;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.card strong {
+  color: #4facfe;
+}
+
+/* Footer */
+footer {
+  background: #010a16;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+  color: #4facfe;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00f2fe;
+}
